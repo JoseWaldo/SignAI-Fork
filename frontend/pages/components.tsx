@@ -1,9 +1,11 @@
+import { ConfigProfile } from "@/components/config-profile/ConfigProfile";
 import FilterSection from "@/components/filter-section/FilterSection";
 import FormAddUser from "@/components/form-add-user/FormAddUser";
 import FormUpdateCredentialUser from "@/components/form-update-credential-user/FormUpdateCredentialUser";
 import InfoUser from "@/components/info-user/InfoUser";
 import Modal from "@/components/modal/Modal";
 import Table from "@/components/table/Table";
+import TagPosition from "@/components/tag-position/TagPosition";
 import useLogin from "@/hooks/useLogin";
 import { RoleType } from "@/types/types";
 import { useState } from "react";
@@ -34,6 +36,9 @@ function Components() {
             <FormUpdateCredentialUser setShowModal={setShowModal} />
           </Modal>
         )}
+
+        <ConfigProfile />
+        <TagPosition />
       </main>
     );
   }
